@@ -10,7 +10,6 @@ global lvlmax
 window=Tk()
 window.title("Exalt Calculator")
 frame1=Frame(window) #Entries
-frame2=Frame(window) #Buttons
 frame3=Frame(window) #Text
 lbllvl=Label(frame1,text="Level")
 level=Entry(frame1)
@@ -18,7 +17,7 @@ nmbr=Entry(frame1)
 lblnmbr=Label(frame1,text="Number of Dragons")
 price=Entry(frame1)
 lblprice=Label(frame1,text="Fodder Price")
-gobtn=Button(frame2,text="Go")
+gobtn=Button(frame1,text="Go")
 yscroll=Scrollbar(frame3)
 txt=Text(frame3,width=25,height=7,yscrollcommand=yscroll.set)
 yscroll.config(command=txt.yview)
@@ -70,16 +69,15 @@ def payouts():
 gobtn.configure(command=payouts)
 
 #Geometry
-frame1.pack()
+frame1.pack(anchor=N,side=LEFT)
 lblnmbr.pack()
 nmbr.pack()
 lbllvl.pack()
 level.pack()
 lblprice.pack()
 price.pack()
-frame2.pack()
-gobtn.pack()
-frame3.pack()
+gobtn.pack(pady=5)
+frame3.pack(side=RIGHT,padx=10)
 txt.pack(side=LEFT)
 yscroll.pack(side=RIGHT, fill=Y)
 
