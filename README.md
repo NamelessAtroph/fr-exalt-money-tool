@@ -1,0 +1,2 @@
+# Flight Rising Exalt Money Tool
+This application's purpose is to calculate the approximate profit (and revenue) made from exalting a certain amount of dragons at a certain level on the pet sim site Flight Rising.
