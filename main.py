@@ -1,5 +1,8 @@
 from tkinter import *
 
+'''CONTRIBUTORS:
+-NamelessAtroph'''
+
 #Base
 global window
 global level
