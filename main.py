@@ -12,6 +12,7 @@ global lvlmin
 global lvlmax
 window=Tk()
 window.title("Exalt Calculator")
+window.resizable(0,0)
 frame1=Frame(window) #Entries
 frame3=Frame(window) #Text
 lbllvl=Label(frame1,text="Level")
@@ -72,7 +73,7 @@ def payouts():
 gobtn.configure(command=payouts)
 
 #Geometry
-frame1.pack(anchor=N,side=LEFT)
+frame1.pack(anchor=N,side=LEFT,padx=10)
 lblnmbr.pack()
 nmbr.pack()
 lbllvl.pack()
